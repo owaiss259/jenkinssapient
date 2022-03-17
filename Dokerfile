@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8083
+ADD target/Docker-Jenkins-Integration-docker-0.0.1-SNAPSHOT.war Docker-Jenkins-Integration-docker-0.0.1-SNAPSHOT.war
+ENTRYPOINT ["java","-jar","/Docker-Jenkins-Integration-docker-0.0.1-SNAPSHOT.war"]
